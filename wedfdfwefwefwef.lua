@@ -193,6 +193,11 @@ if game.PlaceId == 2788229376 then
                             local function setupbank()
                                 game.Players.LocalPlayer.Character.Head.Anchored = false
                                 for i, v in pairs(getgenv().alts) do
+
+                                    if i == "Alt1" then
+                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-389, 21, -338)
+
+                                    end
                                     if i == "Alt1" then
                                         if v == plr.UserId then
                                             game:service 'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-389, 21, -338)
