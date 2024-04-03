@@ -16,27 +16,7 @@ if not game:IsLoaded() then
     until game:IsLoaded()
 end
 
-local function putinair(Type)
-    if CmdSettings["AirLock"] == nil and Type == true then
-        local BP = Variables["Player"].Character.HumanoidRootPart:FindFirstChild("AirLockBP")
-        if BP then
-            BP:Destroy()
-        end
-        CmdSettings["AirLock"] = true
-        Variables["Player"].Character.HumanoidRootPart.CFrame =
-            Variables["Player"].Character.HumanoidRootPart.CFrame * CFrame.new(0, 10, 0)
-        local BP = Instance.new("BodyPosition", Variables["Player"].Character.HumanoidRootPart)
-        BP.Name = "AirLockBP"
-        BP.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
-        BP.Position = Variables["Player"].Character.HumanoidRootPart.Position
-    elseif CmdSettings["AirLock"] == true and Type == false then
-        CmdSettings["AirLock"] = nil
-        local BP = Variables["Player"].Character.HumanoidRootPart:FindFirstChild("AirLockBP")
-        if BP then
-            BP:Destroy()
-        end
-    end
-end
+
 
 local function ShowWallet()
     local Player = game.Players.LocalPlayer
