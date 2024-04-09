@@ -6,4 +6,4 @@ getgenv().alts = {
     Alt2 = 4578675842,
 }
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/tomdevw/we4fewefwefwefwefwefwefwe/main/qqqqqqqwqw2w2dqwwdqwdqwd.lua', true))()\
+loadstring(game:HttpGet('https://raw.githubusercontent.com/tomdevw/altctrl/main/wedfdfwefwefwef.lua', true))()\
